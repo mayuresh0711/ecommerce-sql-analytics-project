@@ -1,0 +1,25 @@
+# OS Files
+.DS_Store
+Thumbs.db
+
+# VS Code workspace settings
+.vscode/
+
+# Python cache (if you ever add Python)
+__pycache__/
+*.pyc
+
+# Environment / secrets
+*.env
+
+# DATA (do not commit raw or clean datasets)
+data/raw_data/*
+data/cleaned_data/*
+
+# Dashboard source files (too large for GitHub)
+dashboards/powerbi/*.pbix
+dashboards/tableau/*.twbx
+
+# Git LFS (optional if you use it)
+*.pbix
+*.twbx
