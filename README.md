@@ -24,35 +24,35 @@ This project is designed exactly like an industry production warehouse.
 
 ## 🏗️ Architecture Overview
 
-       Raw CSV Files
-            │
-            ▼
-     Data Cleaning (SQL)
-            │
-            ▼
-      Star Schema Model
-   (Dimensions + Fact Table)
-            │
-            ▼
-    Partitioning + Indexing
-            │
-            ▼
- Materialized Views (Analytics)
-            │
-            ▼
-  Advanced SQL Analytical Models
+              Raw CSV Files
+                   │
+                   ▼
+           Data Cleaning (SQL)
+                   │
+                   ▼
+           Star Schema Model
+        (Dimensions + Fact Table)
+                   │
+                   ▼
+         Partitioning + Indexing
+                   │
+                   ▼
+        Materialized Views (Analytics)
+                   │
+                   ▼
+        Advanced SQL Analytical Models
 
 ---
 
-## 📁 Project Structure (Cleaned Version — No Dashboards)
-
+## 📁 Project Structure
+```
 ecommerce-sql-analytics-project/
 │
 ├── data/
 │ ├── raw_data/
 │ │ └── Retail_data.csv
 │ ├── cleaned_data/
-│ ├── dim_customers.csv
+│ ├── dim_customers.csv                     
 │ ├── dim_products.csv
 │ └── fact_orders.csv
 │
@@ -107,6 +107,7 @@ ecommerce-sql-analytics-project/
 ├── functions_and_utils.sql
 ├── exports_to_csv.sql
 └── maintenance_vacuum_analyze.sql
+```
 ---
 
 ## ⭐ Key SQL Features Implemented
@@ -145,81 +146,73 @@ ecommerce-sql-analytics-project/
 Refresh options implemented:
 ```sql
 REFRESH MATERIALIZED VIEW mv_monthly_revenue;
-5. Advanced Analytics (Pure SQL Models)
+```
+---
 
-RFM Segmentation
+### **5. Advanced Analytics (Pure SQL Models)**
+- **RFM Segmentation**
+- **Customer Lifetime** Value (LTV)
+- **Cohort Analysis**
+- **Churn Risk Modeling**
+- **Next Purchase Probability**
+- **Time-Series Forecasting Queries** (moving averages, YOY growth)
+  
+These models are all computed using optimized SQL — no Python required.
 
-Customer Lifetime Value (LTV)
+---
 
-Cohort Analysis
-
-Churn Risk Modeling
-
-Next Purchase Probability
-
-Time-Series Forecasting Queries (moving averages, YOY growth)
-
-These models are all computed using optimized SQL — no Python required.📊 Reporting SQL (for BI Tools / Analysts)
-
+### **📊 Reporting SQL (for BI Tools / Analysts)**
 Reusable reporting queries for:
-
-Monthly revenue trends
-
-Product performance ranking
-
-Customer segmentation breakdown
-
-Country-level insights
-
-Time-series analytics
+- **Monthly revenue trends**
+- **Product performance ranking**
+- **Customer segmentation breakdown**
+- **Country-level insights**
+- **Time-series analytics**
 
 Each query lives inside /sql/06_reporting_queries/.
 
-🛠️ Utilities Included
+---
 
-CSV export scripts
+### **🛠️ Utilities Included**
+- **CSV export scripts**
+- **Vacuum/analyze maintenance scripts**
+- **Utility functions (date helpers, safe division, label grouping, etc.)**
 
-Vacuum/analyze maintenance scripts
+---
 
-Utility functions (date helpers, safe division, label grouping, etc.)🔧 Tech Stack
+### **🔧 Tech Stack**
+- **PostgreSQL 15**
+- **SQL (DDL + DML + Window Functions)**
+- **Materialized Views**
+- **Indexes & Partitioning**
+- **ETL-ready SQL**
+- **Git/GitHub**
 
-PostgreSQL 15
+---
 
-SQL (DDL + DML + Window Functions)
+### **🔥 Skills Demonstrated**
+- **SQL Data Engineering**
+- **Database Modeling**
+- **ETL Pipeline Design**
+- **Performance Optimization**
+- **Analytical SQL Techniques**
+- **Data Warehousing Concepts**
+- **GitHub Documentation**
 
-Materialized Views
+---
 
-Indexes & Partitioning
+### **📌 Status**
 
-ETL-ready SQL
+- **✔ SQL Data Warehouse — Complete**
+- **✔ ETL Scripts — Complete**
+- **✔ Analytical Models — Complete**
+- **✔ Reporting Queries — Complete**
+- **✔ Documentation — Complete**
 
-Git/GitHub
+---
 
-🔥 Skills Demonstrated
-
-SQL Data Engineering
-
-Database Modeling
-
-ETL Pipeline Design
-
-Performance Optimization
-
-Analytical SQL Techniques
-
-Data Warehousing Concepts
-
-GitHub Documentation
-
-📌 Status
-
-✔ SQL Data Warehouse — Complete
-✔ ETL Scripts — Complete
-✔ Analytical Models — Complete
-✔ Reporting Queries — Complete
-✔ Documentation — Complete
-
-👤 Contact
+### **👤 Contact**
 Mayuresh Ahire
 📧 ahiremayuresh4@gmail.com
+
 🔗 GitHub: https://github.com/mayuresh0711
