@@ -1,25 +1,37 @@
-# OS Files
+OS / Editor junk
+
 .DS_Store
 Thumbs.db
 
-# VS Code workspace settings
+IDE folders
+
 .vscode/
+.idea/
 
-# Python cache (if you ever add Python)
-__pycache__/
-*.pyc
+Logs
 
-# Environment / secrets
-*.env
+*.log
 
-# DATA (do not commit raw or clean datasets)
-data/raw_data/*
-data/cleaned_data/*
+Python / R / Node (future safety)
 
-# Dashboard source files (too large for GitHub)
-dashboards/powerbi/*.pbix
-dashboards/tableau/*.twbx
+pycache/
+node_modules/
 
-# Git LFS (optional if you use it)
+Data files (large or private)
+
+data/raw_data/.csv
+data/cleaned_data/.csv
+
+BI Tools
+
 *.pbix
+*.pbit
 *.twbx
+*.hyper
+*.tds
+
+Backups
+
+*.bak
+*.zip
+*.tar.gz
