@@ -60,10 +60,11 @@ ecommerce-sql-analytics-project/
 │ ├── architecture_diagram.png
 │ ├── star_schema.png
 │ ├── data_model_diagram.png
-│ ├── churn_model_explanation.md
-│ ├── rfm_explanation.md
-│ ├── ltv_explanation.md
-│ └── cohort_explanation.md
+│ ├── erd_diagram.png
+│ ├── architecture.md
+│ ├── data_model.md
+│ ├──erd.md
+│ └── start_schema.md
 │
 └── sql/
 ├── 01_schema/
@@ -107,6 +108,9 @@ ecommerce-sql-analytics-project/
 ├── functions_and_utils.sql
 ├── exports_to_csv.sql
 └── maintenance_vacuum_analyze.sql
+│
+├── .gitignore
+└── README.md
 ```
 ---
 
