@@ -14,7 +14,7 @@ It simulates a real e-commerce analytics warehouse and demonstrates:
 - Partitioning for performance  
 - Indexing & query optimization  
 - Advanced analytics (RFM segmentation, Cohorts, LTV, Churn risk)  
-- Predictive SQL modeling  
+- Heuristic Churn Scoring  
 - Materialized views for BI performance  
 - ETL-ready SQL scripts  
 
@@ -123,7 +123,8 @@ ecommerce-sql-analytics-project/
   - `dim_date`  
 - Fact table: `fact_orders`  
 - Surrogate keys, granular date dimension, hierarchies (day → month → quarter → year)
-
+## 🏗️ Star Schema Diagram
+![Star Schema Diagram](./docs/images/star_schema_diagram.png)
 ---
 
 ### **2. Fact Table Partitioning**
